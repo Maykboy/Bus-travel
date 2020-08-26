@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Грузовые Перевозки</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/swiper-bundle.min.js" defer></script>
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -71,6 +74,45 @@
     </div>
   </section>
   <!-- /.main -->
+  <section class="import">
+    <div class="container">
+      <span class="import__decor"></span>
+      <div class="import__info">
+        <h2 class="import__title">грузоперевозки по европе</h2>
+        <p class="import__subtitle">
+          Страны Евросоюза, а также Украина, Белоруссия со всеми документами.
+        </p>
+        <a href="#" class="button import__button" type="button">ПОДРОБНЕЕ</a>
+      </div>
+      <div class="slider">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/slide-1.png" alt="slider-1" class="slide-img">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slide-1.png" alt="slider-1" class="slide-img">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slide-1.png" alt="slider-1" class="slide-img">
+            </div>
+
+          </div>
+
+          <button class="button slider-button slider-button--prev">
+            <span class="slider-text">Назад</span>
+          </button>
+          <button class="button slider-button slider-button--next">
+            <span class="slider-text">след</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.import -->
 </body>
 
 </html>

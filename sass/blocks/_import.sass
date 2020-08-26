@@ -1,0 +1,88 @@
+.import
+  &__decor
+    max-width: 90px
+    height: 6px
+    background-color: $primary
+    display: flex
+    margin-bottom: 40px
+    margin-top: 120px
+  &__info
+    display: flex
+    flex-direction: column
+  &__title
+    max-width: 445px
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 49px
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    color: $light
+    margin-top: 0
+    margin-right: 0
+    margin-left: 0
+    margin-bottom: 30px
+  &__subtitle
+    max-width: 445px
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 28px
+    color: $light
+    margin-top: 0
+    margin-right: 0
+    margin-left: 0
+    margin-bottom: 50px
+  &__button
+    max-width: 220px
+    text-align: center
+    padding-top: 18px
+    padding-bottom: 18px
+    padding-right: 48px
+    padding-left: 48px
+    text-decoration: none
+    background-color: $primary
+    color: $light
+    font-style: normal
+    font-weight: 500
+    font-size: 16px;
+    line-height: 25px
+    letter-spacing: 0.1em
+    text-transform: uppercase
+.swiper-container 
+  max-width: 600px
+  max-height: 300px
+  position: relative
+.slider
+  &-text
+    color: $primary
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 25px
+    letter-spacing: 0.1em
+    text-transform: uppercase
+  &-button
+    position: absolute
+    align-items: center
+    right: 0
+    z-index: 10
+    height: 30px
+    border: none
+    background-repeat: no-repeat
+    background-color: transparent
+    &--next
+      display: flex
+      top: -5px
+      background-image: url(../img/Arrow-next.svg) 
+      background-position: right
+      justify-content: flex-start
+      width: 161px
+    &--prev
+      display: flex
+      justify-content: flex-end
+      bottom: -5px
+      background-image: url(../img/Arrow-prev.svg)
+      background-position: leaft
+      width: 160px
+   
