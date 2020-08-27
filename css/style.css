@@ -579,6 +579,40 @@ template {
   line-height: 28px;
 }
 
+.import {
+  position: relative;
+}
+
+.import:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 39.1%;
+  height: 100%;
+  background-color: rgba(57, 63, 71, 0.7);
+}
+
+.import:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 41%;
+  height: 100%;
+  background-color: rgba(57, 63, 71, 0.7);
+}
+
+.import-wrapper {
+  min-height: 561px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .import__decor {
   max-width: 90px;
   height: 6px;
@@ -626,6 +660,7 @@ template {
   margin-right: 0;
   margin-left: 0;
   margin-bottom: 50px;
+  padding-right: 75px;
 }
 
 .import__button {
@@ -648,8 +683,17 @@ template {
 
 .swiper-container {
   max-width: 600px;
-  max-height: 300px;
+  height: 300px;
   position: relative;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .slider-text {
@@ -679,7 +723,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: -5px;
+  top: 0;
   background-image: url(../img/Arrow-next.svg);
   background-position: right;
   -webkit-box-pack: start;
@@ -695,7 +739,7 @@ template {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  bottom: -5px;
+  bottom: 0;
   background-image: url(../img/Arrow-prev.svg);
   background-position: leaft;
   width: 160px;

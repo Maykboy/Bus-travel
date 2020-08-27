@@ -1,4 +1,25 @@
 .import
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 39.1%
+    height: 100%
+    background-color: rgba(#393F47, 0.7)
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    width: 41%
+    height: 100%
+    background-color: rgba(#393F47, 0.7)
+  &-wrapper
+    min-height: 561px
+    display: flex
+    align-items: center
   &__decor
     max-width: 90px
     height: 6px
@@ -33,6 +54,7 @@
     margin-right: 0
     margin-left: 0
     margin-bottom: 50px
+    padding-right: 75px
   &__button
     max-width: 220px
     text-align: center
@@ -51,8 +73,11 @@
     text-transform: uppercase
 .swiper-container 
   max-width: 600px
-  max-height: 300px
+  height: 300px
   position: relative
+.swiper-slide
+  display: flex
+  align-items: center 
 .slider
   &-text
     color: $primary
@@ -73,7 +98,7 @@
     background-color: transparent
     &--next
       display: flex
-      top: -5px
+      top: 0
       background-image: url(../img/Arrow-next.svg) 
       background-position: right
       justify-content: flex-start
@@ -81,7 +106,7 @@
     &--prev
       display: flex
       justify-content: flex-end
-      bottom: -5px
+      bottom: 0
       background-image: url(../img/Arrow-prev.svg)
       background-position: leaft
       width: 160px
